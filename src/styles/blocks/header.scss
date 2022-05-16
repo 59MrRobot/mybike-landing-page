@@ -138,6 +138,7 @@
     min-height: 100vh;
 
     z-index: -1;
+    padding: 29px $mobilePaddingX 18vh;
 
     background-color: $c-lightGray;
 
@@ -147,27 +148,22 @@
     transition: transform $transitionDurationMenu ease-in-out,
       z-index $transitionDurationMenu ease-in-out;
 
+    @include tablet {
+      padding: 36px $tabletPaddingX 18vh;
+    }
+
+    @include desktop {
+      padding-left: $desktopPaddingX;
+      padding-right: $desktopPaddingX;
+    }
+
     &:target {
       transform: translateY(0);
       z-index: 1;
     }
 
     &-wrapper {
-      padding-top: 29px;
-
       @include limitContentWitdth;
-
-      @include tablet {
-        padding-top: 36px;
-
-        max-width: $maxContentWidthTablet;
-      }
-
-      @include desktop {
-        padding-top: 48px;
-
-        max-width: $maxContentWidthDesktop;
-      }
     }
 
     &-items {
