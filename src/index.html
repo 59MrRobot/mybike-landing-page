@@ -3,11 +3,89 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <link
+        rel="shortcut icon"
+        href="/images/favicon.png"
+        type="image/x-icon">
+    <title>MyBiKE</title>
     <link rel="stylesheet" href="./styles/main.scss">
+    <script src="scripts/main.js" defer></script>
   </head>
-  <body>
-    <h1>Hello Mate Academy</h1>
-    <script type="text/javascript" src="scripts/main.js"></script>
+
+  <body class="page">
+    <header class="header">
+      <div class="header__content-wrapper">
+        <section class="header__controls">
+          <a href="#">
+            <img
+              src="./images/logo.png"
+              alt="MyBiKE logo"
+              class="header__logo">
+          </a>
+
+          <div class="header__icons">
+            <a href="tel:+1-234-555-55-55" class="header__call-link">
+            </a>
+
+            <a href="#menu" class="header__menu-toggler"></a>
+          </div>
+        </section>
+
+        <section class="header__menu" id="menu">
+          <div class="header__menu-wrapper">
+            <div class="header__menu-items">
+              <a href="#">
+                <img
+                  src="./images/logo.png"
+                  alt="MyBiKE logo"
+                  class="header__logo">
+              </a>
+              <a
+                href="#"
+                class="header__menu-cross">
+              </a>
+            </div>
+
+            <nav class="nav">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Home</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#promo" class="nav__link">About Us</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#compare" class="nav__link">Compare Bikes</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#details" class="nav__link">Details</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#contact-us" class="nav__link">Contact Us</a>
+                </li>
+                <li class="nav__item">
+                  <a
+                  href="tel:+1-234-555-55-55"
+                  class="nav__link header__menu-number"
+                >
+                  +1 234 5555-55-55
+                  </a>
+                </li>
+                <li class="nav__item">
+                  <a
+                    href="tel:+1-234-555-55-55"
+                    class="nav__link header__menu-book"
+                  >
+                    Book a test ride
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </section>
+
+        <h1 class="header__title">Take the Streets</h1>
+      </div>
+    </header>
   </body>
 </html>
