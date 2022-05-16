@@ -28,5 +28,13 @@
     &:hover {
       border-color: #000;
     }
+
+    &--number {
+      @include fontParams(16px, 27px, 700);
+      margin-top: 40px;
+      letter-spacing: 2px;
+
+      color: #000;
+    }
   }
 }
