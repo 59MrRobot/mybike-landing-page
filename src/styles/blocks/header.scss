@@ -190,14 +190,6 @@
 
       color: #000;
     }
-
-    &-book {
-      @include fontParams(12px, 16px, 700);
-      margin-top: 16px;
-      letter-spacing: 2px;
-
-      color: #000;
-    }
   }
 
   &__title {
